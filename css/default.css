@@ -7,15 +7,6 @@ body {
     margin-bottom: 100px;
 }
 
-.top-content {
-    margin-left: 10px;
-    margin-bottom: 40px;
-}
-
-.top-content h2 {}
-
-.top-content p {}
-
 /* Float four columns side by side */
 .column {
     float: left;
@@ -35,6 +26,15 @@ body {
     display: table;
     clear: both;
 }
+
+.top-content {
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.top-content h2 {}
+
+.top-content p {}
 
 /* Responsive columns */
 @media screen and (max-width: 900px) {
