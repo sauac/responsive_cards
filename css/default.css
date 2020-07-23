@@ -6,9 +6,7 @@ body {
 /* Float four columns side by side */
 .column {
     display: flex;
-
     padding: 0 10px;
-
 }
 
 /* Remove extra left and right margins, due to padding */

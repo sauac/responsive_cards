@@ -6,10 +6,30 @@ body {
 /* Float four columns side by side */
 .column {
     display: flex;
-
+/*align-items: stretch !important;*/
     padding: 0 10px;
-
 }
+
+
+/* Responsive columns */
+@media screen and (max-width: 900px) {
+    .column {
+        flex: 0 1 calc(50%) !important;
+
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 0 1 calc(100%) !important;
+
+        margin-bottom: 20px;
+
+    }
+}
+
 
 /* Remove extra left and right margins, due to padding */
 .row {
@@ -17,6 +37,7 @@ body {
     max-width: 1050px;
     margin: auto;
     display: flex;
+/*    align-items: stretch !important;*/
     padding-bottom: 40px;
     justify-content: center;    
 
@@ -33,24 +54,6 @@ body {
 
 
 
-/* Responsive columns */
-@media screen and (max-width: 900px) {
-    .column {
-        width: 50%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-
-    }
-}
 
 /* Style the counter cards */
 .card {
